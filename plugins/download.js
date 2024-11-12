@@ -10,7 +10,7 @@ let baseUrl;
 })();
 
 
-const yourName = "*SILENT-SOBX-MD 🧬*";
+const yourName = "*SAAD-SOBX-MD 🧬*";
 
 
 
@@ -28,7 +28,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         if (!q && !q.startsWith("https://")) return reply("give me fb url")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/fdown?url=${q}`)
-        reply("*SILENT-SOBX-MD FACEBOOK VIDEO DOWNLOADING...📥*")
+        reply("*SAAD-SOBX-MD FACEBOOK VIDEO DOWNLOADING...📥*")
         //send video (hd,sd)
         await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: `- HD\n\n ${yourName}` }, { quoted: mek })
         await conn.sendMessage(from, { video: { url: data.data.sd }, mimetype: "video/mp4", caption: `- SD \n\n ${yourName}` }, { quoted: mek })  
@@ -52,7 +52,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         if (!q && !q.startsWith("https://")) return reply("give me tiktok url")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/tiktokdl?url=${q}`)
-        reply("*SILENT-SOBX-MD TIKTOK VIDEO DOWNLOADING...📥*")
+        reply("*SAAD-SOBX-MD TIKTOK VIDEO DOWNLOADING...📥*")
         //send video (wm,nwm)
         await conn.sendMessage(from, { video: { url: data.data.no_wm }, mimetype: "video/mp4", caption: `- NO-WATERMARK\n\n ${yourName}` }, { quoted: mek })
         await conn.sendMessage(from, { video: { url: data.data.wm }, mimetype: "video/mp4", caption: `- WITH-WATERMARK \n\n ${yourName}` }, { quoted: mek })  
@@ -126,7 +126,7 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         if (!q && !q.startsWith("https://")) return reply("give me mediafire url")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/mediafiredl?url=${q}`)
-        reply("*SILENT-SOBX-MD MEDIAFIRE FILE DOWNLOADING...📥*")
+        reply("*SAAD-SOBX-MD MEDIAFIRE FILE DOWNLOADING...📥*")
         await conn.sendMessage(from, { document: { url: data.data.link_1 }, fileName: data.data.name, mimetype: data.data.file_type, caption: `${data.data.name}\n\n${yourName}` }, { quoted: mek })                                                                                                                 
     } catch (e) {
         console.log(e)

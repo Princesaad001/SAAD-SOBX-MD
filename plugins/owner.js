@@ -14,11 +14,11 @@ try{
 const config = await readEnv();
 let owner = ` 
 *HEAR IS BOT OWNER INFO*
-*NAME:-* *USMAN.S*
-*AGE:-* *20 YEARS*
-*PUBLIC NAME:-* *SILENTLOVER*
+*NAME:-* *SAAD*
+*AGE:-* *21 YEARS*
+*PUBLIC NAME:-* **
 
-> *BY SILENTLOVER432*
+> *BY SAAD*
 `
 await conn.sendMessage(from, { text: owner ,
   contextInfo: {
@@ -28,15 +28,15 @@ await conn.sendMessage(from, { text: owner ,
     isForwarded: false,
     forwardedNewsletterMessageInfo: {
       newsletterJid: '120363232588171807@newsletter',
-      newsletterName: "SILENTLOVER432",
+      newsletterName: "SAAD",
       serverMessageId: 999
     },
 externalAdReply: { 
-title: 'SILENTLOVER432',
+title: 'SAAD',
 body: `${pushname}`,
 mediaType: 1,
-sourceUrl: "https://wa.me/+923096287432?text=HY SILENTLOVER4 I'M MSG YOU FROM OWNER ADS" ,
-thumbnailUrl: "https://files.catbox.moe/h5ddpq.jpg" ,
+sourceUrl: "https://wa.me/+923418595810?text=HY SAAD I'M MSG YOU FROM OWNER ADS" ,
+thumbnailUrl: "https://i.postimg.cc/mgpqJBxG/IMG-20240429-212900.jpg" ,
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
